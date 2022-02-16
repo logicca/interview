@@ -1,0 +1,13 @@
+<template>
+  <h2>Fast and furious movies</h2>
+
+<lightning-button variant="brand" label="Call FF API" onclick={buttonHandler}></lightning-button>
+<div class="slds-p-around_medium lgc-bg" style="height: 300px;">
+    <lightning-datatable
+            key-field="id"
+            data={data}
+            columns={columns}
+            is-loading={tableLoadingState}>
+    </lightning-datatable>
+</div>
+</template>
